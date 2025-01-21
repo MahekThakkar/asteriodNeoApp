@@ -9,7 +9,17 @@
 </head>
 <body class="p-5">
     <div class="container">
-        <h1 class="mb-4">Neo Stats Results</h1>
+        <div class="d-flex justify-content-between">
+            <div class="">
+
+                <h1 class="mb-4">Neo Stats Results</h1>
+            </div>
+
+            <div class="">
+
+                <a href="{{url()->previous()}}" class="btn btn-lg btn-dark">Back</a>
+            </div>
+        </div>
         <div class="mb-3">
             <h3>Fastest Asteroid</h3>
             <p>ID: {{ $fastestAsteroid['id'] }}</p>

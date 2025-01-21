@@ -14,10 +14,23 @@
             <div class="mb-3">
                 <label for="start_date" class="form-label">Start Date</label>
                 <input type="date" class="form-control" id="start_date" name="start_date" required>
+
+                <span style="color: red">
+                    @error('start_date')
+                        {{$message}}
+                    @enderror
+                </span>
+                
             </div>
             <div class="mb-3">
                 <label for="end_date" class="form-label">End Date</label>
                 <input type="date" class="form-control" id="end_date" name="end_date" required>
+
+                <span style="color: red">
+                    @error('end_date')
+                        {{$message}}
+                    @enderror
+                </span>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
